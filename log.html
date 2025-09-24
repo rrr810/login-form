@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional styling for the login form */
+        body {
+            background-color: rgb(0, 9, 129);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 5px 11px rgba(255, 11, 84, 0.884);
+            padding: 20px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: rgb(255, 0, 0);
+            margin-bottom: 10px;
+        }
+
+        .login-container h2 {
+            color: rgb(124, 56, 0);
+            margin-bottom: 20px;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .login-container label {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .login-container input, .login-container select, .login-container button {
+            padding: 10px;
+            border: 1px solid #0028da;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .login-container button {
+            background-color: rgb(255, 115, 0);
+            color: rgb(25, 0, 255);
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .login-container button:hover {
+            background-color: rgb(27, 12, 1);
+        }
+
+        .login-container input[type="checkbox"] {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>GRAND HOTEL</h1>
+        <h2>Guest Login</h2>
+        <h3>Enter Login Details</h3>
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="" placeholder="Enter username">
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="" placeholder="Enter password">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="">
+            
+            <label for="phone number">Phone Number</label>
+            <input type="number" name="phone number" id="">
+            
+            <label for="date of birth">Date of Birth</label>
+            <input type="date" name="date of birth" id="">
+            
+            <label for="payment">Payment</label>
+            <select>
+                <option>Mpesa</option>
+                <option>Visa</option>
+                <option>Bank</option>
+            </select>
+
+            <label for="booking pdf">Booking PDF</label>
+            <input type="file" name="booking pdf" id="" accept="booking/pdf">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
